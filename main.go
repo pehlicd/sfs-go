@@ -26,7 +26,7 @@ func main() {
 }
 
 func rootHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "<h1>Welcome to file server</h1><div>My mission is serving files for you.</div>")
+	fmt.Fprintf(w, "<h1>Welcome to file server</h1><div>My mission is serving files for you.</div><div><a href='http://localhost:4000/files'>GO TO FILES</a>")
 }
 
 func logRequest(handler http.Handler) http.Handler {
